@@ -1,5 +1,9 @@
+#define redled 7
+#define greenled 8
 const int trigPin = 2;
 const int echoPin = 3;
+int temps = 1000;
+int test = 40;
 long duration;
 int distance;
 void setup() {
@@ -22,4 +26,10 @@ distance= duration*0.034/2;
 // Prints the distance on the Serial Monitor
 Serial.print("Distance: ");
 Serial.println(distance);
+if (distance > test ){
+  digitalWrite(redled,HIGH);
+}else {
+  digitalWrite(greenled,LOW);
+}
+delay(temps);
 }
