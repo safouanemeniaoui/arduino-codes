@@ -27,8 +27,10 @@ distance= duration*0.034/2;
 Serial.print("Distance: ");
 Serial.println(distance);
 if (distance > test ){
-  digitalWrite(redled,HIGH);
+  digitalWrite(redled,LOW);
+  digitalWrite(greenled,HIGH);
 }else {
+  digitalWrite(redled,HIGH);
   digitalWrite(greenled,LOW);
 }
 delay(temps);
