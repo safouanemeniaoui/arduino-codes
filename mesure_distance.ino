@@ -2,8 +2,8 @@
 #define greenled 8
 const int trigPin = 2;
 const int echoPin = 3;
-int temps = 1000;
-int test = 40;
+int temps = 100;
+int test = 10;
 long duration;
 int distance;
 void setup() {
