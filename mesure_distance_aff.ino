@@ -7,7 +7,7 @@ int temps = 100;
 int test = 10;
 long duration;
 int distance;
-LiquidCrystal lcd(12,11,5,4,3,2);//rs,e,d4,d5,d6,d7
+LiquidCrystal lcd(12,11,10,9,5,4);//rs,e,d4,d5,d6,d7
 
 void setup() {
 pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
